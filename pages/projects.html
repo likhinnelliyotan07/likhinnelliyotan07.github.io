@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Likhin Nelliyotan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Drawer / Sidebar -->
+    <div class="drawer" id="drawer">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">×</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <span class="drawer-toggle" onclick="openDrawer()">☰</span>
+        <a class="navbar-brand" href="../index.html">Likhin Nelliyotan</a>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="container text-center mt-5">
+        <h1>My Projects</h1>
+        <p class="text-muted">A showcase of my work in Flutter, Android-Kotlin, and Swift.</p>
+
+        <div class="row mt-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="https://source.unsplash.com/400x250/?app,technology" alt="Project 1">
+                    <h3>Event Networking App</h3>
+                    <p class="tech-stack">Flutter | Firebase | OneSignal</p>
+                    <button class="btn btn-dark" onclick="toggleDetails('p1')">View Details</button>
+                    <p id="p1" class="project-details">An event networking platform with real-time chat, push
+                        notifications, and user connections.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="https://source.unsplash.com/400x250/?mobile,uiux" alt="Project 2">
+                    <h3>Fitness Tracker</h3>
+                    <p class="tech-stack">Android-Kotlin | SQLite | Jetpack Compose</p>
+                    <button class="btn btn-dark" onclick="toggleDetails('p2')">View Details</button>
+                    <p id="p2" class="project-details">A fitness tracking app with workout logs, calorie tracking, and
+                        progress analytics.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="https://source.unsplash.com/400x250/?ios,apple" alt="Project 3">
+                    <h3>iOS Notes App</h3>
+                    <p class="tech-stack">Swift | Core Data | SwiftUI</p>
+                    <button class="btn btn-dark" onclick="toggleDetails('p3')">View Details</button>
+                    <p id="p3" class="project-details">A sleek iOS notes app with cloud sync, markdown support, and rich
+                        text editing.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Likhin Nelliyotan | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function openDrawer() {
+            document.getElementById("drawer").style.left = "0";
+        }
+
+        function closeDrawer() {
+            document.getElementById("drawer").style.left = "-250px";
+        }
+
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = (details.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Likhin Nelliyotan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Drawer / Sidebar -->
+    <div class="drawer" id="drawer">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">×</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">My Works</a>
+        <a href="contact.html" class="active">Contact</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <span class="drawer-toggle" onclick="openDrawer()">☰</span>
+        <a class="navbar-brand" href="../index.html">Likhin Nelliyotan</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="container text-center mt-5">
+        <h1>Contact Me</h1>
+        <p class="text-muted">Get in touch with me for collaborations, projects, or just to say hi!</p>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+        </form>
+
+        <!-- Social Links -->
+        <div class="social-links mt-4">
+            <a href="https://www.instagram.com/likhinnelliyotan007/" class="instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/likhin-nelliyotan-34455b123/" class="linkedin" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/likhinnelliyotan07" class="github" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://gitlab.com/lnelliyotan" class="gitlab" target="_blank"><i class="fab fa-gitlab"></i></a>
+            <a href="https://leetcode.com/u/bV1xvuXvd7/" class="leetcode" target="_blank"><i
+                    class="fas fa-code"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Likhin Nelliyotan | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function openDrawer() {
+            document.getElementById("drawer").style.left = "0";
+        }
+
+        function closeDrawer() {
+            document.getElementById("drawer").style.left = "-250px";
+        }
+    </script>
+
+</body>
+
+</html>

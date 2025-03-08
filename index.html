@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Likhin Nelliyotan</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,42 +38,36 @@
     <section class="hero-section text-center text-white d-flex align-items-center"
         style="background-image: url('images/banner1.jpg'); height: 100vh; background-size: cover;">
         <div class="container">
-            <img src="images/profile.jpg" class="rounded-circle mb-3 shadow-lg" width="150" height="150"
-                alt="Profile Image">
+            <img src="images/profile.jpg" class="rounded-circle shadow-lg" width="150" height="150" alt="Profile Image">
             <h1 class="display-4">Hi, I'm <strong>Likhin Nelliyotan</strong></h1>
             <p class="lead">Expert Mobile App Developer (Flutter, Kotlin, Swift)</p>
-            <a href="projects.html" class="btn btn-warning btn-lg">View My Work</a>
+            <a href="pages/projects.html" class="btn btn-primary btn-lg">View My Work</a>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="container my-5">
         <h2 class="text-center">Technical Skills</h2>
-        <div class="row text-center">
+        <div class="row">
             <div class="col-md-4">
-                <img src="images/mobile_app.png" width="80" alt="Flutter">
                 <h4>Mobile Development</h4>
                 <ul>
-                    <li><img src="images/flutter.png" width="30"> Flutter (iOS & Android)</li>
-                    <li><img src="images/kotlin.png" width="30"> Kotlin (Android)</li>
-                    <li><img src="images/swift.png" width="30"> Swift (iOS)</li>
+                    <li>Flutter (iOS & Android)</li>
+                    <li>Kotlin (Android)</li>
+                    <li>Swift (iOS)</li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <img src="images/database.png" width="80" alt="Database">
                 <h4>Backend & Database</h4>
                 <ul>
-                    <li><img src="images/aws.png" width="30"> AWS, Amplify, GraphQL</li>
-                    <li><img src="images/firebase.png" width="30"> Firebase, SQL, Hive</li>
+                    <li>AWS, Amplify, GraphQL</li>
+                    <li>Firebase, SQL, Hive</li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <img src="images/architecture.png" width="80" alt="Architecture">
                 <h4>Architecture</h4>
                 <ul>
-                    <li><img src="images/mvvm.png" width="30"> MVVM</li>
-                    <li><img src="images/bloc.png" width="30"> BLoC</li>
-                    <li><img src="images/clean_architecture.png" width="30"> Clean Architecture</li>
+                    <li>MVVM, BLoC, Clean Architecture</li>
                 </ul>
             </div>
         </div>
@@ -80,25 +77,39 @@
     <section class="container my-5">
         <h2 class="text-center">Recent Projects</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4">
                 <div class="card">
                     <img src="images/toxic_truth.jpg" class="card-img-top" alt="Toxic Truth">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Toxic Truth</h5>
-                        <p class="card-text">AI-powered app to understand stressful conversations.</p>
-                        <a href="#" class="btn btn-primary">App Store</a>
-                        <a href="#" class="btn btn-success">Play Store</a>
+                        <p class="card-text">AI-powered app to understand stressful conversations at the workplace.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="https://apps.apple.com/us/app/toxic-truth-know-your-rights/id6740861507"
+                                class="btn btn-primary">
+                                <i class="bi bi-app-indicator"></i> App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.nonoodle.toxictruth" class="btn btn-success">
+                                <i class="bi bi-play-circle"></i> Play Store
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4">
                 <div class="card">
                     <img src="images/chicking.png" class="card-img-top" alt="Chicking">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Chicking</h5>
                         <p class="card-text">Online food delivery app for Chicking Restaurant.</p>
-                        <a href="#" class="btn btn-primary">App Store</a>
-                        <a href="#" class="btn btn-success">Play Store</a>
+                        <div class="d-flex justify-content-between">
+                            <a href="https://apps.apple.com/in/app/chicking-online-delivery/id1451570624"
+                                class="btn btn-primary">
+                                <i class="bi bi-app-indicator"></i> App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.chickinguae&hl=en_IN" class="btn btn-success">
+                                <i class="bi bi-play-circle"></i> Play Store
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,7 +120,6 @@
     <footer class="bg-dark text-white text-center p-3">
         <p>&copy; 2025 Likhin Nelliyotan. All Rights Reserved.</p>
     </footer>
-
 </body>
 
 </html>

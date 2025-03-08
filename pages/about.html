@@ -6,65 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Likhin Nelliyotan</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Drawer / Sidebar -->
-    <div class="drawer" id="drawer">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">×</a>
-        <a href="../index.html">Home</a>
-        <a href="about.html" class="active">About Me</a>
-        <a href="works.html">My Works</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
     <!-- Navbar -->
-    <nav class="navbar">
-        <span class="drawer-toggle" onclick="openDrawer()">☰</span>
-        <a class="navbar-brand" href="../index.html">Likhin Nelliyotan</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Likhin Nelliyotan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- About Section -->
-    <section class="container text-center mt-5">
-        <img src="../sources/profile.jpg" alt="Profile Picture" class="profile-img">
-        <h1 class="mt-3">Likhin Nelliyotan</h1>
-        <p class="text-muted">Mobile App Developer (Flutter, Android-Kotlin, Swift)</p>
-        <p>I specialize in creating high-performance mobile applications using Flutter, Kotlin, and Swift. Passionate
-            about clean UI/UX, scalable architecture, and delivering seamless user experiences.</p>
+    <section class="container my-5" id="about">
+        <h2>About Me</h2>
+        <p>I am <strong>Likhin Nelliyotan</strong>, a passionate and experienced Mobile App Developer with expertise in
+            developing high-quality applications using <strong>Flutter, Kotlin, and Swift</strong>. Over the past 9+
+            years, I have worked on diverse projects ranging from enterprise applications to innovative mobile app
+            solutions.</p>
+        <p>I specialize in creating seamless user experiences and integrating advanced technologies like AI, Rest APIs,
+            and cloud platforms such as AWS and Firebase. I am always eager to learn and implement new technologies to
+            solve complex business challenges.</p>
 
-        <!-- Social Links -->
-        <div class="social-links mt-4">
-            <a href="https://www.instagram.com/likhinnelliyotan007/" class="instagram" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/likhin-nelliyotan-34455b123/" class="linkedin" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/likhinnelliyotan07" class="github" target="_blank"><i
-                    class="fab fa-github"></i></a>
-            <a href="https://gitlab.com/lnelliyotan" class="gitlab" target="_blank"><i class="fab fa-gitlab"></i></a>
-            <a href="https://leetcode.com/u/bV1xvuXvd7/" class="leetcode" target="_blank"><i
-                    class="fas fa-code"></i></a>
-        </div>
+        <h3>My Expertise</h3>
+        <ul>
+            <li>Mobile Application Development (Flutter, Kotlin, Swift)</li>
+            <li>Backend Integration (Firebase, AWS, Amplify, GraphQL)</li>
+            <li>Application Architecture (MVVM, BLoC, Clean Architecture)</li>
+            <li>AI Integration (Assembly AI, Machine Learning)</li>
+            <li>Database Management (SQL, Hive, Firebase Firestore)</li>
+        </ul>
+
+        <h3>My Mission</h3>
+        <p>My mission is to build world-class mobile applications that drive business growth and enhance user
+            experiences. I strive to deliver robust, scalable, and innovative solutions tailored to my clients' needs.
+        </p>
+
+        <h3>Professional Background</h3>
+        <p>With a professional career spanning over 9 years, I have had the privilege of working with top companies such
+            as Emvigo Technologies, Alisons Informatics, and Spectro Graphix. Currently, I am a <strong>Technology
+                Lead</strong> at Emvigo Technologies, where I lead large-scale mobile development projects.</p>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Likhin Nelliyotan | All Rights Reserved</p>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 Likhin Nelliyotan. All Rights Reserved.</p>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        function openDrawer() {
-            document.getElementById("drawer").style.left = "0";
-        }
-
-        function closeDrawer() {
-            document.getElementById("drawer").style.left = "-250px";
-        }
-    </script>
-
 </body>
 
 </html>
